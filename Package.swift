@@ -7,7 +7,7 @@ let package = Package(
         .macOS(.v13)
     ],
     dependencies: [
-        .package(path: "../EpubBuilder"),
+        .package(url: "https://github.com/Chen2357/EpubBuilder.git", from: "1.0.0"),
         .package(url: "https://github.com/apple/swift-argument-parser.git", from: "1.0.0"),
         .package(url: "https://github.com/mojzesh/swift-colorful.git", from: "1.0.0")
     ],

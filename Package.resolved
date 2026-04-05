@@ -1,6 +1,15 @@
 {
-  "originHash" : "c0b960e64786d774487fb0c2c412a43a83aeeb7bd6ccaf358d7007cba459f747",
+  "originHash" : "5dd08601c18ef8d4c8a0061eccfa799cd6214c9d15f30357057cbce698d59441",
   "pins" : [
+    {
+      "identity" : "epubbuilder",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/Chen2357/EpubBuilder.git",
+      "state" : {
+        "revision" : "0c90e26e15d5aa91a9aa8c7fe1c28afaba9b7631",
+        "version" : "1.0.0"
+      }
+    },
     {
       "identity" : "swift-argument-parser",
       "kind" : "remoteSourceControl",
