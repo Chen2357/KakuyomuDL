@@ -1,0 +1,79 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"cSpell.words": [
+			"Epub",
+			"Framesetter",
+			"Hiragino",
+			"Kakuyomu",
+			"Metatype",
+			"Mincho",
+			"nosync",
+			"preconcurrency",
+			"Subrange",
+			"swiftc",
+			"Vrtl"
+		]
+	},
+	"tasks": {
+		"version": "2.0.0",
+		"tasks": [
+			{
+				"label": "swift: Build Debug KakuyomuDL (KakuyomuDL)",
+				"type": "shell",
+				"command": "swift",
+				"args": [
+					"build",
+					"--configuration",
+					"debug",
+					"--product",
+					"KakuyomuDL"
+				],
+				"group": "build",
+				"problemMatcher": "$swiftc"
+			},
+			{
+				"label": "swift: Build Release KakuyomuDL (KakuyomuDL)",
+				"type": "shell",
+				"command": "swift",
+				"args": [
+					"build",
+					"--configuration",
+					"release",
+					"--product",
+					"KakuyomuDL"
+				],
+				"group": "build",
+				"problemMatcher": "$swiftc"
+			}
+		]
+	},
+	"launch": {
+		"configurations": [
+			{
+				"type": "swift",
+				"request": "launch",
+				"args": [],
+				"cwd": "${workspaceFolder:KakuyomuDL}",
+				"name": "Debug KakuyomuDL (KakuyomuDL)",
+				"target": "KakuyomuDL",
+				"configuration": "debug",
+				"preLaunchTask": "swift: Build Debug KakuyomuDL (KakuyomuDL)"
+			},
+			{
+				"type": "swift",
+				"request": "launch",
+				"args": [],
+				"cwd": "${workspaceFolder:KakuyomuDL}",
+				"name": "Release KakuyomuDL (KakuyomuDL)",
+				"target": "KakuyomuDL",
+				"configuration": "release",
+				"preLaunchTask": "swift: Build Release KakuyomuDL (KakuyomuDL)"
+			}
+		]
+	},
+}
